@@ -34,9 +34,9 @@ void GPIO_Configuration(void) {
     GPIOC->CRL &= ~(0x0F << 4); // Clear the bits
     GPIOC->CRL |= (0x08 << 4);
 
-    // Configure PA5 (LED) as output
-    GPIOA->CRL &= ~(GPIO_CRL_MODE5 | GPIO_CRL_CNF10);
-    GPIOA->CRL |= GPIO_CRL_MODE5_0; // Output mode, max speed 10 MHz
+    // Configure PA10 (LED output) as output
+    GPIOA->CRH &= ~(0x0F << 8); // Clear the bits
+    GPIOA->CRH |= (0x03 << 8);  // Output mode, max speed 10 MHz
 }
 
 void delay_ms(uint32_t ms) {
