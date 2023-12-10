@@ -2,7 +2,7 @@
 #define MYADC_H
 
 #include "stm32f10x.h"
-#include "MyGPIO.h"
+#include "../Include/MYGPIO.h"
 
 /**
  * @brief Initialise l'ADC donn? sur le channel donn? en mode Single ou (nbconver) Conversion.

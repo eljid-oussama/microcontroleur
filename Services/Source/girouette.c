@@ -12,7 +12,7 @@ void gir_init(){
 	MyGPIO_Init(GPIOA, 8 , In_Analog ); //input X
 	MyGPIO_Init(GPIOA,  13, Out_Ppull );
 	
-	//CONFIGURERATION  TIM2 & TIM3
+	//CONFIGURERATION TIM3
 	MyTimer_Base_Init(&T3);
 	
 	MyGPIO_Init(GPIOC, 7 , AltOut_Ppull ); //input X

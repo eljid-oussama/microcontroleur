@@ -448,6 +448,16 @@
               <FileType>1</FileType>
               <FilePath>.\Drivers\Source\MYTimer.c</FilePath>
             </File>
+            <File>
+              <FileName>MYADC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Drivers\Source\MYADC.c</FilePath>
+            </File>
+            <File>
+              <FileName>MYADC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Drivers\Include\MYADC.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -899,6 +909,16 @@
               <FileName>MYTimer.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Drivers\Source\MYTimer.c</FilePath>
+            </File>
+            <File>
+              <FileName>MYADC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Drivers\Source\MYADC.c</FilePath>
+            </File>
+            <File>
+              <FileName>MYADC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Drivers\Include\MYADC.h</FilePath>
             </File>
           </Files>
         </Group>
