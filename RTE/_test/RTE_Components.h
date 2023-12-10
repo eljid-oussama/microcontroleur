@@ -4,7 +4,7 @@
  *      *** Do not modify ! ***
  *
  * Project: 'Project2' 
- * Target:  'Target 1' 
+ * Target:  'test' 
  */
 
 #ifndef RTE_COMPONENTS_H
