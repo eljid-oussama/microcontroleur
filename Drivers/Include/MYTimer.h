@@ -13,6 +13,7 @@ void MyTimer_Base_Init(MyTimer_Struct_TypeDef * Timer);
 void MyTimer_ActiveIT (TIM_TypeDef * Timer, char Prio, void (* Pnt_fun) (void));
 void MyTimer_PWM_Init (TIM_TypeDef * Timer, char Channel);
 void MyTimer_PWM_DutyCycle (TIM_TypeDef * Timer, char Channel, int procentARR);
+void TIM_encode(MyTimer_Struct_TypeDef * Timer);
 
 #define MyTimer_Base_Start(Timer) Timer->CR1 |= 0x1
 #define MyTimer_Base_Stop(Timer) Timer->CR1 &= ~(0x1)

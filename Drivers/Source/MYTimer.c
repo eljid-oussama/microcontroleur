@@ -108,6 +108,22 @@ void MyTimer_PWM_DutyCycle (TIM_TypeDef * Timer, char Channel, int percentARR){
 			}
 }
 
+void TIM_encode(MyTimer_Struct_TypeDef * Timer){
+	MyTimer_Base_Init(Timer);	
+	 
+	Timer->timer->CCMR1 |= (1 << 0); //CC1S
+  Timer->timer->CCMR1 |= (1 << 8); //CC2S
+	
+	Timer->timer->SMCR = 3;// SMS encoder 3
+	Timer->timer->CR1 |= (1 << 0);
+	Timer->timer->CNT = 0;
+
+  Timer->timer->CCER |= (1 << 0) ;
+	Timer->timer->CCER |= (1 << 4) ;
+	
+	
+} 
+
 
 void TIM1_IRQHandler(void){
 	(* TIM1_pnt_fun)();

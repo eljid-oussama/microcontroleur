@@ -2,10 +2,12 @@
 #define GIROUETTE_H
 
 #include "stm32f10x.h"
+#include "../../Drivers/Include/MYGPIO.h"
+#include "../../Drivers/Include/MYTimer.h"
 
 void gir_init();
-int gir_ecouter();
-void CNT_zero(void);
 int readEncoderValue3(void);
+void gir_srvomoteur();
+void pwm_voilier();
 
 #endif
