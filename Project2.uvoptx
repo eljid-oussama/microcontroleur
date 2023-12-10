@@ -434,7 +434,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\uC_project\Project2\Services\Source\girouette.c</PathWithFileName>
+      <PathWithFileName>.\Services\Source\girouette.c</PathWithFileName>
       <FilenameWithoutPath>girouette.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -446,7 +446,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\uC_project\Project2\Services\Include\girouette.h</PathWithFileName>
+      <PathWithFileName>.\Services\Include\girouette.h</PathWithFileName>
       <FilenameWithoutPath>girouette.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -514,8 +514,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\uC_project\Project2\Drivers\Source\MYTimer.c</PathWithFileName>
-      <FilenameWithoutPath>MYTimer.c</FilenameWithoutPath>
+      <PathWithFileName>.\Drivers\Source\MYGPIO.c</PathWithFileName>
+      <FilenameWithoutPath>MYGPIO.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -526,8 +526,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\uC_project\Project2\Drivers\Source\MYGPIO.c</PathWithFileName>
-      <FilenameWithoutPath>MYGPIO.c</FilenameWithoutPath>
+      <PathWithFileName>.\Drivers\Source\MYTimer.c</PathWithFileName>
+      <FilenameWithoutPath>MYTimer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

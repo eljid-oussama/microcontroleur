@@ -28,13 +28,43 @@ Project File Date:  12/10/2023
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'test'
 Note: source file '.\Application\Main.c' - object file renamed from '.\Objects\Main.o' to '.\Objects\main_1.o'.
+compiling Main.c...
+Application\../Drivers/Include/USART.h(10): warning:  #1295-D: Deprecated declaration get_command - give arg types
+  signed char get_command();
+Application\../Drivers/Include/USART.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+Application\../Services/Include/MYPLATEAU.h(6): warning:  #1295-D: Deprecated declaration PLAT_Init - give arg types
+  void PLAT_Init();
+Application\../Services/Include/MYPLATEAU.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+Application\Main.c: 4 warnings, 0 errors
 compiling MYGPIO.c...
-..\..\uC_project\Project2\Drivers\Source\MYGPIO.c(79): warning:  #1-D: last line of file ends without a newline
+Drivers\Source\MYGPIO.c(79): warning:  #1-D: last line of file ends without a newline
   }
-..\..\uC_project\Project2\Drivers\Source\MYGPIO.c: 1 warning, 0 errors
+Drivers\Source\MYGPIO.c: 1 warning, 0 errors
+compiling girouette.c...
+Services\Source\../Include/girouette.h(6): warning:  #1295-D: Deprecated declaration gir_init - give arg types
+  void gir_init();
+Services\Source\../Include/girouette.h(7): warning:  #1295-D: Deprecated declaration gir_ecouter - give arg types
+  int gir_ecouter();
+Services\Source\../Include/girouette.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+Services\Source\../../Drivers/Include/MYTimer.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+Services\Source\girouette.c(40): warning:  #1-D: last line of file ends without a newline
+  }
+Services\Source\girouette.c(40): warning:  #940-D: missing return statement at end of non-void function "gir_ecouter" 
+  }
+Services\Source\girouette.c: 6 warnings, 0 errors
+compiling MYTimer.c...
+Drivers\Source\../Include/MYTimer.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+Drivers\Source\MYTimer.c(132): warning:  #1-D: last line of file ends without a newline
+  	
+Drivers\Source\MYTimer.c: 2 warnings, 0 errors
 linking...
 Program Size: Code=1604 RO-data=276 RW-data=20 ZI-data=1028  
-".\Objects\Project2_test.axf" - 0 Error(s), 1 Warning(s).
+".\Objects\Project2_test.axf" - 0 Error(s), 13 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -63,8 +93,8 @@ Package Vendor: Keil
    * Component: Keil::Device:Startup:1.0.0
       Source file:   Device\Source\ARM\startup_stm32f10x_md.s
       Source file:   Device\Source\system_stm32f10x.c
-      Include file:  RTE_Driver\Config\RTE_Device.h
       Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Include file:  RTE_Driver\Config\RTE_Device.h
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

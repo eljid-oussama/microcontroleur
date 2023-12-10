@@ -1,10 +1,11 @@
-#include "girouette.h"
-#include "stm32f10x.h"
+#include "../Include/girouette.h"
+#include "../../Drivers/Include/MYGPIO.h"
+#include "../../Drivers/Include/MYTimer.h"
 #include <stdio.h>
 
 
 void gir_init(){
-	
+	MyTimer_Struct_TypeDef T3 = { TIM3, 1439, 0}; // Def of T3
 	//CONFIGURATION INPUTS
 	MyGPIO_Init(GPIOA, 6 , In_Floating); //input A
 	MyGPIO_Init(GPIOA, 7 , In_Floating ); //input B
@@ -12,7 +13,7 @@ void gir_init(){
 	MyGPIO_Init(GPIOA,  13, Out_Ppull );
 	
 	//CONFIGURERATION  TIM2 & TIM3
-	MyTimer_Base_Init(TIM3 , 1439 , 0);
+	MyTimer_Base_Init(&T3);
 	
 	MyGPIO_Init(GPIOC, 7 , AltOut_Ppull ); //input X
 	

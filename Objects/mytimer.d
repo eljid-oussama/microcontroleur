@@ -1,5 +1,5 @@
-.\objects\mytimer.o: ..\..\uC_project\Project2\Drivers\Source\MYTimer.c
-.\objects\mytimer.o: ..\..\uC_project\Project2\Drivers\Source\../Include/MYTimer.h
+.\objects\mytimer.o: Drivers\Source\MYTimer.c
+.\objects\mytimer.o: Drivers\Source\../Include/MYTimer.h
 .\objects\mytimer.o: C:\Users\danie\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h
 .\objects\mytimer.o: .\RTE\_test\RTE_Components.h
 .\objects\mytimer.o: C:\Users\danie\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm3.h

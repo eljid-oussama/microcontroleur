@@ -406,12 +406,12 @@
             <File>
               <FileName>girouette.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\uC_project\Project2\Services\Source\girouette.c</FilePath>
+              <FilePath>.\Services\Source\girouette.c</FilePath>
             </File>
             <File>
               <FileName>girouette.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\uC_project\Project2\Services\Include\girouette.h</FilePath>
+              <FilePath>.\Services\Include\girouette.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -439,14 +439,14 @@
               <FilePath>.\Drivers\Include\USART.h</FilePath>
             </File>
             <File>
-              <FileName>MYTimer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\uC_project\Project2\Drivers\Source\MYTimer.c</FilePath>
-            </File>
-            <File>
               <FileName>MYGPIO.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\uC_project\Project2\Drivers\Source\MYGPIO.c</FilePath>
+              <FilePath>.\Drivers\Source\MYGPIO.c</FilePath>
+            </File>
+            <File>
+              <FileName>MYTimer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Drivers\Source\MYTimer.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -858,12 +858,12 @@
             <File>
               <FileName>girouette.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\uC_project\Project2\Services\Source\girouette.c</FilePath>
+              <FilePath>.\Services\Source\girouette.c</FilePath>
             </File>
             <File>
               <FileName>girouette.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\uC_project\Project2\Services\Include\girouette.h</FilePath>
+              <FilePath>.\Services\Include\girouette.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -891,14 +891,14 @@
               <FilePath>.\Drivers\Include\USART.h</FilePath>
             </File>
             <File>
-              <FileName>MYTimer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\uC_project\Project2\Drivers\Source\MYTimer.c</FilePath>
-            </File>
-            <File>
               <FileName>MYGPIO.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\uC_project\Project2\Drivers\Source\MYGPIO.c</FilePath>
+              <FilePath>.\Drivers\Source\MYGPIO.c</FilePath>
+            </File>
+            <File>
+              <FileName>MYTimer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Drivers\Source\MYTimer.c</FilePath>
             </File>
           </Files>
         </Group>
