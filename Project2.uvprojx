@@ -403,21 +403,21 @@
               <FileType>1</FileType>
               <FilePath>.\Services\Source\MYPLATEAU.c</FilePath>
             </File>
+            <File>
+              <FileName>girouette.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\uC_project\Project2\Services\Source\girouette.c</FilePath>
+            </File>
+            <File>
+              <FileName>girouette.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\uC_project\Project2\Services\Include\girouette.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Drivers</GroupName>
           <Files>
-            <File>
-              <FileName>MYTimer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\TP2\Drivers\Source\MYTimer.c</FilePath>
-            </File>
-            <File>
-              <FileName>MYGPIO.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\TP2\Drivers\Source\MYGPIO.c</FilePath>
-            </File>
             <File>
               <FileName>MYGPIO.h</FileName>
               <FileType>5</FileType>
@@ -437,6 +437,16 @@
               <FileName>USART.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Drivers\Include\USART.h</FilePath>
+            </File>
+            <File>
+              <FileName>MYTimer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\uC_project\Project2\Drivers\Source\MYTimer.c</FilePath>
+            </File>
+            <File>
+              <FileName>MYGPIO.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\uC_project\Project2\Drivers\Source\MYGPIO.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -845,21 +855,21 @@
               <FileType>1</FileType>
               <FilePath>.\Services\Source\MYPLATEAU.c</FilePath>
             </File>
+            <File>
+              <FileName>girouette.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\uC_project\Project2\Services\Source\girouette.c</FilePath>
+            </File>
+            <File>
+              <FileName>girouette.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\uC_project\Project2\Services\Include\girouette.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Drivers</GroupName>
           <Files>
-            <File>
-              <FileName>MYTimer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\TP2\Drivers\Source\MYTimer.c</FilePath>
-            </File>
-            <File>
-              <FileName>MYGPIO.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\TP2\Drivers\Source\MYGPIO.c</FilePath>
-            </File>
             <File>
               <FileName>MYGPIO.h</FileName>
               <FileType>5</FileType>
@@ -879,6 +889,16 @@
               <FileName>USART.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Drivers\Include\USART.h</FilePath>
+            </File>
+            <File>
+              <FileName>MYTimer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\uC_project\Project2\Drivers\Source\MYTimer.c</FilePath>
+            </File>
+            <File>
+              <FileName>MYGPIO.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\uC_project\Project2\Drivers\Source\MYGPIO.c</FilePath>
             </File>
           </Files>
         </Group>
