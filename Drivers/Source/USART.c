@@ -1,7 +1,9 @@
 #include "../Include/USART.h"
 #include "../Include/MYGPIO.h"
+#include <stdint.h>
+#include <stdio.h>
 
-volatile signed char command = 0;
+volatile int8_t command = 0;
 
 void USART_Init(USART_TypeDef * Usart){
 	// Inits the GPIOs used by USART 3
@@ -47,12 +49,12 @@ void USART_RX_IRQ_Init(USART_TypeDef * Usart, int priority){
 	}
 }
 void USART2_IRQHandler(){
-	command = (signed char) USART3->DR; // Resets the REXNE flag on read
+	command = USART3->DR; // Resets the REXNE flag on read
 }
 void USART3_IRQHandler(){		
-	command = (signed char) USART3->DR; // Resets the REXNE flag on read
+	command = USART3->DR; // Resets the REXNE flag on read
 }
 
-signed char get_command(){
+int8_t get_command(){
 	return command;
 }
