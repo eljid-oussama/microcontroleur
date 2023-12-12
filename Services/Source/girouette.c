@@ -62,7 +62,7 @@ void gir_srvomoteur(){
 
 
 void pwm_voilier(){
-	MyTimer_Struct_TypeDef T4 = { TIM4, 60000, 25}; // Def of T4
+	MyTimer_Struct_TypeDef T4 = { TIM4, 60000, 24}; // Def of T4 (ARR=55384 , PSC = 25)-->20ms
 	MyGPIO_Init(GPIOB, 6 , AltOut_Ppull);
 	 //calcul de la arr et psc voir la fiche
 		MyTimer_Base_Init(&T4);
