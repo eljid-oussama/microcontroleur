@@ -35,7 +35,7 @@ void gir_init(){
 
 int readEncoderValue3(void) {
     // Lire la valeur du codeur incrémental (chaine A)
-    return ((int)(TIM3->CNT >> 2)); //angle de rotation
+    return ((TIM3->CNT)/4); //angle de rotation
 }
 
 
@@ -65,12 +65,10 @@ void pwm_voilier(){
 	MyTimer_Struct_TypeDef T4 = { TIM4, 60000, 25}; // Def of T4
 	MyGPIO_Init(GPIOB, 6 , AltOut_Ppull);
 	 //calcul de la arr et psc voir la fiche
-	MyTimer_PWM_Init(TIM4 , 1);
-	
-	MyTimer_Base_Init(&T4);
+		MyTimer_Base_Init(&T4);
+	MyTimer_PWM_Init (TIM4 , 1);
 	
 
-	gir_srvomoteur();
 	
 		
 	

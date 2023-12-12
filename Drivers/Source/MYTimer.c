@@ -84,26 +84,24 @@ void MyTimer_PWM_Init (TIM_TypeDef * Timer, char Channel){
 	}
 }
 
+
+
 void MyTimer_PWM_DutyCycle (TIM_TypeDef * Timer, char Channel, int percentARR){
 	switch (Channel){
 		case 1:
-			Timer->CCR1 &= ~(0xFFFF);
-			Timer->CCR1 |= (Timer->ARR) * percentARR/100;
+			Timer->CCR1 = (Timer->ARR) * percentARR/100;
 			break;
 			
 		case 2:
-			Timer->CCR2 &= ~(0xFFFF);
-			Timer->CCR2 |= (Timer->ARR) * percentARR/100;
+			Timer->CCR2 = (Timer->ARR) * percentARR/100;
 			break;
 		
 		case 3:
-			Timer->CCR3 &= ~(0xFFFF);
-			Timer->CCR3 |= (Timer->ARR) * percentARR/100; 
+			Timer->CCR3 = (Timer->ARR) * percentARR/100; 
 			break;
 			
 		default: // Case '4'
-			Timer->CCR4 &= ~(0xFFFF);
-			Timer->CCR4 |= (Timer->ARR) * percentARR/100;
+			Timer->CCR4 = (Timer->ARR) * percentARR/100;
 			break;
 			}
 }
