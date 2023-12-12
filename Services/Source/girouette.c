@@ -4,10 +4,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int angle_gr ;
-int angle_v;
-int percentARR ;
-bool flag =true ;
+int angle_gr ; //Girouette angle
+int angle_v; // Angle of voilier
+int percentARR ; // Percentage ARR
+bool flag =true ; //Drapeu pour angle 0
 
 void gir_init(){
 	MyTimer_Struct_TypeDef T3 = { TIM3, 1439, 0}; // Def of T3
@@ -22,7 +22,7 @@ void gir_init(){
 	
 	
 	while(flag){
-		if (!MyGPIO_Read(GPIOA, 8)){
+		if (!MyGPIO_Read(GPIOA, 8)){ 
 	       flag = false;
 			TIM_encode(&T3);
 			pwm_voilier();
@@ -34,7 +34,7 @@ void gir_init(){
 
 
 int readEncoderValue3(void) {
-    // Lire la valeur du codeur incrémental (chaine A)
+    // Lire la valeur du codeur incrÃ©mental (chaine A)
     return ((TIM3->CNT)/4); //angle de rotation
 }
 
@@ -55,8 +55,8 @@ void gir_srvomoteur(){
 		angle_v = -(2*angle_gr/3)+210;
 	}
 	
-	percentARR = (5*angle_v)/90+5;
-  MyTimer_PWM_DutyCycle (TIM4, 1, percentARR);
+	percentARR = (5*angle_v)/90+5; // Calcules sur photo
+  MyTimer_PWM_DutyCycle (TIM4, 1, percentARR); //Regle CCR1
 
 }
 
