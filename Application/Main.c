@@ -4,11 +4,11 @@
 int main(int args, char *argv[]) {
 	
 
-	//PLAT_Init();
+	PLAT_Init();
 	gir_init();
 	while(1){
 		// Continually gets the sets the turn speed to the latest value
-		//PLAT_Update();
+		PLAT_Update();
 		gir_srvomoteur();
 	}
 }
