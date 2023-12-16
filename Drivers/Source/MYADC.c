@@ -44,8 +44,8 @@ void start_ADC( ADC_TypeDef*ADC , char nbconver , char voie ){
 	
 	ADC->CR2=ADC->CR2 | (1 << 0) | (1 << 20) | (7 << 17 ) ; //start conversion by setting ADON bit to 1 // le second decalage est lancer le trigger // le choix du timer(swstrart)
 	
-	ADC->SQR1 = ADC->SQR1 | (nbconver <<20); //le choix de nombre de conversions
-	ADC->SQR3 |= voie ; //choix du voie de conversion 
+	ADC->SQR1 = ADC->SQR1 | (nbconver <<20); //le choix de nombre de conversions (How m)
+	ADC->SQR3 |= voie ; //choix du voie de conversion (What input pin analog signal is coming in on)
 	
 }
 

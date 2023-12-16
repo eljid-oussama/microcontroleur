@@ -14,7 +14,7 @@ void PLAT_Init(){
 	
 	// Initializes GPIOs and timer
 	MyGPIO_Init( GPIOA, 0, Out_Ppull);
-	MyGPIO_Init(GPIOA, 1, AltOut_Ppull);
+	MyGPIO_Init(GPIOA, 1, AltOut_Ppull); // Pin A1 corresponds to channel 2 on TIM2
 	MyTimer_Base_Init(&T2);
 	MyTimer_PWM_Init(TIM2, 2);
 }
